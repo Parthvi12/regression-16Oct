@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Slack Bot",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Slack Bot_JSObject1",
+  "deleted": false,
+  "gitSyncId": "652d021ab77c5b05e7da60f5_652d27f040d2164a0e997a01"
+}

@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page2",
-    "slug": "page2",
+    "name": "pagelevelaction",
+    "slug": "pagelevelaction",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 790,
+          "bottomRow": 660,
           "containerStyle": "none",
           "snapRows": 78,
           "parentRowSpace": 1,
@@ -26,15 +26,17 @@
           "leftColumn": 0
         },
         "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page2",
+        "id": "pagelevelaction",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "652d021ab77c5b05e7da60f5_652d221840d2164a0e99766a"
