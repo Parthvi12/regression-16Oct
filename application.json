@@ -3,6 +3,10 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "Menuwidget iframe widget",
+      "isDefault": false
     }
   ],
   "viewMode": false,

@@ -1,0 +1,108 @@
+{
+    "isCompact": true,
+    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "mobileBottomRow": 13,
+    "widgetName": "MenuButton1",
+    "dynamicPropertyPathList": [
+        {"key": "menuVariant"},
+        {"key": "menuColor"}
+    ],
+    "displayName": "Menu button",
+    "iconSVG": "/static/media/icon.631848e88e7a3db05f6015f22835e81b.svg",
+    "topRow": 9,
+    "bottomRow": 13,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 35,
+    "topRowBeforeCollapse": 9,
+    "animateLoading": true,
+    "parentColumnSpace": 20.109375,
+    "dynamicTriggerPathList": [{"key": "menuItems.menuItemfd1lv4xudj.onClick"}],
+    "leftColumn": 19,
+    "dynamicBindingPathList": [
+        {"key": "menuVariant"},
+        {"key": "menuColor"},
+        {"key": "borderRadius"}
+    ],
+    "isDisabled": false,
+    "key": "sigicdyd5f",
+    "isDeprecated": false,
+    "rightColumn": 35,
+    "iconName": "translate",
+    "menuVariant": "{{RadioGroup1.selectedOptionValue}}",
+    "widgetId": "msorhwgudz",
+    "menuItems": {
+        "menuItemc08ynjwtxk": {
+            "widgetId": "pks815i216",
+            "index": 4,
+            "id": "menuItemc08ynjwtxk",
+            "label": "Menu Item 2",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItem1": {
+            "widgetId": "",
+            "index": 0,
+            "label": "First Menu Item",
+            "id": "menuItem1",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem3": {
+            "widgetId": "",
+            "index": 2,
+            "label": "Third Menu Item",
+            "id": "menuItem3",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItemfd1lv4xudj": {
+            "onClick": "{{JSObject1.myFun1();}}",
+            "backgroundColor": "#fee2e2",
+            "iconName": "add-row-top",
+            "widgetId": "50nljja9ch",
+            "iconColor": "#3b82f6",
+            "index": 5,
+            "iconAlign": "left",
+            "id": "menuItemfd1lv4xudj",
+            "label": "Menu Item 3 ACTION ADDED",
+            "isDisabled": false,
+            "isVisible": true,
+            "textColor": "#be185d"
+        },
+        "menuItem2": {
+            "widgetId": "",
+            "index": 1,
+            "label": "Second Menu Item",
+            "id": "menuItem2",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem4bu3fxwqoo": {
+            "widgetId": "jkv3tu7122",
+            "index": 3,
+            "id": "menuItem4bu3fxwqoo",
+            "label": "Menu Item 1",
+            "isDisabled": false,
+            "isVisible": true
+        }
+    },
+    "bottomRowBeforeCollapse": 13,
+    "isVisible": true,
+    "label": "Open Menu to check submenu",
+    "version": 1,
+    "parentId": "0",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 9,
+    "originalTopRow": 9,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 19,
+    "menuItemsSource": "STATIC",
+    "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+    "originalBottomRow": 13,
+    "iconAlign": "left",
+    "placement": "CENTER"
+}
