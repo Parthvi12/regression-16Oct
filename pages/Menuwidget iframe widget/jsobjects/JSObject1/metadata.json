@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "JSObject1",
-    "pageId": "Menuwidget",
+    "pageId": "Menuwidget iframe widget",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -18,7 +18,7 @@
     ],
     "userPermissions": []
   },
-  "id": "Menuwidget_JSObject1",
+  "id": "Menuwidget iframe widget_JSObject1",
   "deleted": false,
   "gitSyncId": "652d021ab77c5b05e7da60f5_652d0ec0b77c5b05e7da6235"
 }

@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Menuwidget",
-    "slug": "menuwidget",
+    "name": "Menuwidget iframe widget",
+    "slug": "menuwidget-iframe-widget",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 850,
           "containerStyle": "none",
           "snapRows": 78,
           "parentRowSpace": 1,
@@ -28,7 +28,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Menuwidget",
+        "id": "Menuwidget iframe widget",
         "deleted": false,
         "policies": [],
         "userPermissions": []

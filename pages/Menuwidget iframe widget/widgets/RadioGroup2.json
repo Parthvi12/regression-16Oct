@@ -1,36 +1,32 @@
 {
     "boxShadow": "none",
-    "mobileBottomRow": 12,
-    "widgetName": "RadioGroup1",
+    "mobileBottomRow": 40,
+    "widgetName": "RadioGroup2",
     "displayName": "Radio Group",
     "iconSVG": "/static/media/icon.99c101b3b70073f9c00e9af6523f9427.svg",
     "searchTags": ["choice"],
-    "topRow": 6,
-    "bottomRow": 14,
+    "topRow": 29,
+    "bottomRow": 35,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "type": "RADIO_GROUP_WIDGET",
     "hideCard": false,
-    "mobileRightColumn": 14,
-    "defaultOptionValue": "PRIMARY",
+    "mobileRightColumn": 60,
+    "defaultOptionValue": "https://app.appsmith.com/app/appsmith-regression-app/feature-list-63845f073e748351b7e6b224",
     "animateLoading": true,
     "parentColumnSpace": 20.078125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 0,
+    "leftColumn": 14,
     "dynamicBindingPathList": [{"key": "accentColor"}],
     "labelPosition": "Top",
     "options": [
         {
-            "label": "PRIMARY",
-            "value": "PRIMARY"
+            "label": "Regressionapp",
+            "value": "https://app.appsmith.com/app/appsmith-regression-app/feature-list-63845f073e748351b7e6b224"
         },
         {
-            "label": "SECONDARY",
-            "value": "SECONDARY"
-        },
-        {
-            "label": "TERTIARY",
-            "value": "TERTIARY"
+            "label": "dpforregression",
+            "value": "https://ee-2657.dp.appsmith.com/app/my-first-application/menuwidget-652d0227b77c5b05e7da610a?branch=kavitatest"
         }
     ],
     "isDisabled": false,
@@ -39,9 +35,9 @@
     "labelTextSize": "0.875rem",
     "isRequired": false,
     "isDeprecated": false,
-    "rightColumn": 14,
+    "rightColumn": 34,
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "3a5fs8xhcx",
+    "widgetId": "43vvf8ygz1",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": true,
     "label": "Label",
@@ -51,11 +47,11 @@
     "labelAlignment": "left",
     "renderMode": "CANVAS",
     "isLoading": false,
-    "mobileTopRow": 6,
-    "originalTopRow": 6,
-    "mobileLeftColumn": 0,
+    "mobileTopRow": 34,
+    "originalTopRow": 29,
+    "mobileLeftColumn": 40,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 12,
+    "originalBottomRow": 35,
     "isInline": true,
     "alignment": "left",
     "minDynamicHeight": 4

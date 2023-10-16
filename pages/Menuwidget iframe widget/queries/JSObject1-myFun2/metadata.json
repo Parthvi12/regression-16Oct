@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Menuwidget",
-    "collectionId": "Menuwidget_JSObject1",
+    "pageId": "Menuwidget iframe widget",
+    "collectionId": "Menuwidget iframe widget_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -38,7 +38,7 @@
     "userPermissions": [],
     "createdAt": "2023-10-16T10:21:52Z"
   },
-  "id": "Menuwidget_JSObject1.myFun2",
+  "id": "Menuwidget iframe widget_JSObject1.myFun2",
   "deleted": false,
   "gitSyncId": "652d021ab77c5b05e7da60f5_652d0ec0b77c5b05e7da6230"
 }
