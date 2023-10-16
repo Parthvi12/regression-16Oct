@@ -1,64 +1,54 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "test",
+    "slug": "test",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1174,
+          "rightColumn": 1224,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 880,
+          "bottomRow": 1150,
           "containerStyle": "none",
-          "snapRows": 125,
+          "snapRows": 67,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 87,
-          "minHeight": 900,
+          "minHeight": 690,
           "parentColumnSpace": 1,
-          "dynamicTriggerPathList": [],
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
         "layoutOnLoadActions": [
           [
             {
-              "name": "FindQuery",
+              "id": "test_Api1",
+              "name": "Api1",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "(data_table.pageNo - 1) * data_table.pageSize",
-                "data_table.pageSize",
-                "data_table.searchText||\"\"",
-                "data_table.sortOrder.column || 'genres'",
-                "data_table.sortOrder.order == \"desc\" ? -1 : 1",
-                "key_select.selectedOptionValue",
-                "order_select.selectedOptionValue"
-              ],
+              "pluginType": "API",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
         "layoutOnLoadActionErrors": [],
-        "mongoEscapedWidgetNames": [
-          "data_table"
-        ],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "test",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "652ce82e98c83d1f867db0c7_652ce82e98c83d1f867db0ca"
+  "gitSyncId": "652cfd8329eb2b35c940fdfb_652cfd8c29eb2b35c940fe0f"
 }

@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "App_detailes",
+    "slug": "app-detailes",
     "layouts": [
       {
         "viewMode": false,
@@ -13,14 +13,14 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 880,
+          "bottomRow": 890,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 87,
-          "minHeight": 900,
+          "minHeight": 890,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
           "dynamicBindingPathList": [],
@@ -29,28 +29,24 @@
         "layoutOnLoadActions": [
           [
             {
-              "name": "FindQuery",
+              "id": "App_detailes_SelectQuery",
+              "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
                 "(data_table.pageNo - 1) * data_table.pageSize",
                 "data_table.pageSize",
-                "data_table.searchText||\"\"",
-                "data_table.sortOrder.column || 'genres'",
-                "data_table.sortOrder.order == \"desc\" ? -1 : 1",
-                "key_select.selectedOptionValue",
-                "order_select.selectedOptionValue"
+                "data_table.searchText || \"\"",
+                "data_table.sortOrder.column || 'app_id'",
+                "data_table.sortOrder.order || \"ASC\""
               ],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
         "layoutOnLoadActionErrors": [],
-        "mongoEscapedWidgetNames": [
-          "data_table"
-        ],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "App_detailes",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -60,5 +56,5 @@
     "policies": []
   },
   "deleted": false,
-  "gitSyncId": "652ce82e98c83d1f867db0c7_652ce82e98c83d1f867db0ca"
+  "gitSyncId": "652cfd6529eb2b35c940fde4_652d411140d2164a0e9983b6"
 }
