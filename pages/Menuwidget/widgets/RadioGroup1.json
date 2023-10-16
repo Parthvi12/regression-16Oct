@@ -1,0 +1,62 @@
+{
+    "boxShadow": "none",
+    "mobileBottomRow": 12,
+    "widgetName": "RadioGroup1",
+    "displayName": "Radio Group",
+    "iconSVG": "/static/media/icon.99c101b3b70073f9c00e9af6523f9427.svg",
+    "searchTags": ["choice"],
+    "topRow": 6,
+    "bottomRow": 14,
+    "parentRowSpace": 10,
+    "labelWidth": 5,
+    "type": "RADIO_GROUP_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 14,
+    "defaultOptionValue": "PRIMARY",
+    "animateLoading": true,
+    "parentColumnSpace": 20.078125,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "labelPosition": "Top",
+    "options": [
+        {
+            "label": "PRIMARY",
+            "value": "PRIMARY"
+        },
+        {
+            "label": "SECONDARY",
+            "value": "SECONDARY"
+        },
+        {
+            "label": "TERTIARY",
+            "value": "TERTIARY"
+        }
+    ],
+    "isDisabled": false,
+    "flexVerticalAlignment": "start",
+    "key": "3jm85nu268",
+    "labelTextSize": "0.875rem",
+    "isRequired": false,
+    "isDeprecated": false,
+    "rightColumn": 14,
+    "dynamicHeight": "AUTO_HEIGHT",
+    "widgetId": "3a5fs8xhcx",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "label": "Label",
+    "version": 1,
+    "parentId": "0",
+    "tags": ["Toggles"],
+    "labelAlignment": "left",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 6,
+    "originalTopRow": 6,
+    "mobileLeftColumn": 0,
+    "maxDynamicHeight": 9000,
+    "originalBottomRow": 12,
+    "isInline": true,
+    "alignment": "left",
+    "minDynamicHeight": 4
+}
