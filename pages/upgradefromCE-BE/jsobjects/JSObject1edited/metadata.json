@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1edited",
+    "pageId": "upgradefromCE-BE",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "upgradefromCE-BE_JSObject1edited",
+  "deleted": false,
+  "gitSyncId": "652d021ab77c5b05e7da60f5_652e65763824d14877eb673c"
+}

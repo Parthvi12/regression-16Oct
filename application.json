@@ -47,6 +47,10 @@
     {
       "id": "upgradefromCE-BE",
       "isDefault": false
+    },
+    {
+      "id": "Pageedited",
+      "isDefault": false
     }
   ],
   "viewMode": false,
