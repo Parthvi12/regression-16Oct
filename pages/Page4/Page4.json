@@ -2,6 +2,7 @@
   "unpublishedPage": {
     "name": "Page4",
     "slug": "page4",
+    "customSlug": "page4urlchanged",
     "layouts": [
       {
         "viewMode": false,
