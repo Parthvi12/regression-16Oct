@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "UpdateQuery",
+    "name": "FindQueryCopy",
     "datasource": {
       "name": "Movies",
       "pluginId": "mongo-plugin",
@@ -34,9 +34,9 @@
           "componentData": "movies"
         },
         "command": {
-          "data": "UPDATE",
+          "data": "FIND",
           "viewType": "component",
-          "componentData": "UPDATE"
+          "componentData": "FIND"
         },
         "count": {
           "query": {
@@ -61,16 +61,24 @@
         },
         "find": {
           "query": {
-            "data": ""
+            "data": "{ homepage: /{{data_table.searchText||\"\"}}/i }",
+            "viewType": "component",
+            "componentData": "{ homepage: /{{data_table.searchText||\"\"}}/i }"
           },
           "limit": {
-            "data": ""
+            "data": "{{data_table.pageSize}}",
+            "viewType": "component",
+            "componentData": "{{data_table.pageSize}}"
           },
           "skip": {
-            "data": ""
+            "data": "{{(data_table.pageNo - 1) * data_table.pageSize}}",
+            "viewType": "component",
+            "componentData": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
           },
           "sort": {
-            "data": ""
+            "data": "{ \n{{data_table.sortOrder.column || 'genres'}}: {{data_table.sortOrder.order == \"desc\" ? -1 : 1}} \n}",
+            "viewType": "component",
+            "componentData": "{ \n{{key_select.selectedOptionValue}}: {{order_select.selectedOptionValue}} \n}"
           },
           "projection": {
             "data": ""
@@ -83,30 +91,24 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"update\": \"movies\",\n  \"updates\": [{\n    \"q\": { _id: ObjectId('{{data_table.selectedRow._id}}') },\n    \"u\": {\n  $set:{{update_form.formData}}\n},\n    \"multi\": false\n}]\n}\n",
+            "data": "{\n  \"find\": \"movies\",\n  \"filter\": { homepage: /{{data_table.searchText||\"\"}}/i },\n  \"sort\": { \n{{data_table.sortOrder.column || 'genres'}}: {{data_table.sortOrder.order == \"desc\" ? -1 : 1}} \n},\n  \"skip\": {{(data_table.pageNo - 1) * data_table.pageSize}},\n  \"limit\": {{data_table.pageSize}},\n  \"batchSize\": {{data_table.pageSize}}\n}\n",
             "status": "SUCCESS"
           }
         },
         "smartSubstitution": {
-          "data": true,
+          "data": false,
           "viewType": "component",
-          "componentData": true
+          "componentData": false
         },
         "updateMany": {
           "query": {
-            "data": "{ _id: ObjectId('{{data_table.selectedRow._id}}') }",
-            "viewType": "component",
-            "componentData": "{ _id: ObjectId('{{data_table.selectedRow._id}}') }"
+            "data": ""
           },
           "limit": {
-            "data": "SINGLE",
-            "viewType": "component",
-            "componentData": "SINGLE"
+            "data": "SINGLE"
           },
           "update": {
-            "data": "{\n  $set:{{update_form.formData}}\n}",
-            "viewType": "component",
-            "componentData": "{\n  \"genres\" : {{update_col_1.text}},\n\t\"homepage\" : {{update_col_2.text}},\n  \"imdb_id\" : {{update_col_3.text}},\n  \"poster_path\" : {{update_col_4.text}}\n}"
+            "data": ""
           }
         }
       }
@@ -116,19 +118,20 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "data_table.selectedRow._id",
-      "update_col_1.text",
-      "update_col_2.text",
-      "update_col_3.text",
-      "update_col_4.text",
-      "update_form.formData"
+      "(data_table.pageNo - 1) * data_table.pageSize",
+      "data_table.pageSize",
+      "data_table.searchText||\"\"",
+      "data_table.sortOrder.column || 'genres'",
+      "data_table.sortOrder.order == \"desc\" ? -1 : 1",
+      "key_select.selectedOptionValue",
+      "order_select.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_UpdateQuery",
+  "id": "Page1_FindQueryCopy",
   "deleted": false,
-  "gitSyncId": "652ce9b798c83d1f867db14e_652cf0e829eb2b35c940fd6e"
+  "gitSyncId": "652ce82e98c83d1f867db0c7_652ecd837c8c842734312f42"
 }
