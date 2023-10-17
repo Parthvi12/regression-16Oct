@@ -31,6 +31,10 @@
     {
       "id": "Movies",
       "isDefault": false
+    },
+    {
+      "id": "DowngradedtoCEfromEE",
+      "isDefault": false
     }
   ],
   "viewMode": false,
