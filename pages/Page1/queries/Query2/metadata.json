@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "DeleteQuery",
+    "name": "Query2",
     "datasource": {
       "name": "Movies",
       "pluginId": "mongo-plugin",
@@ -15,38 +15,47 @@
     },
     "pageId": "Page1",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "template_table/{{data_table.selectedRow._ref}}",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "formData": {
+        "aggregate": {
+          "limit": {
+            "data": "10"
+          }
+        },
+        "body": {
+          "data": "{\n  \"find\": \"movies\",\n  \"filter\": {\n    \"homepage\": \"https://movies.disney.com/cruella\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+        },
         "collection": {
-          "data": "movies",
-          "viewType": "component",
-          "componentData": "movies"
+          "data": "movies"
         },
         "command": {
-          "data": "DELETE",
-          "viewType": "component",
-          "componentData": "DELETE"
+          "data": "FIND"
         },
         "delete": {
+          "limit": {
+            "data": "SINGLE"
+          }
+        },
+        "find": {
           "query": {
-            "data": "{ _id: ObjectId('{{data_table.triggeredRow._id}}') }",
-            "viewType": "component",
-            "componentData": "{ _id: ObjectId('{{data_table.triggeredRow._id}}') }"
+            "data": "{ \"homepage\": \"https://movies.disney.com/cruella\"}"
           },
           "limit": {
-            "data": "SINGLE",
-            "viewType": "component",
-            "componentData": "SINGLE"
+            "data": "10"
+          },
+          "sort": {
+            "data": "{\"_id\": 1}"
           }
         },
         "smartSubstitution": {
-          "data": true,
-          "viewType": "component",
-          "componentData": true
+          "data": true
+        },
+        "updateMany": {
+          "limit": {
+            "data": "SINGLE"
+          }
         }
       }
     },
@@ -54,16 +63,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "data_table.selectedRow._ref",
-      "data_table.triggeredRow._id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_DeleteQuery",
+  "id": "Page1_Query2",
   "deleted": false,
-  "gitSyncId": "652ce9b798c83d1f867db14e_652cf0e829eb2b35c940fd70"
+  "gitSyncId": "652ce82e98c83d1f867db0c7_652d235540d2164a0e997731"
 }
