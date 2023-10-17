@@ -2,6 +2,7 @@
   "unpublishedPage": {
     "name": "upgradefromCE-BE",
     "slug": "upgradefromce-be",
+    "customSlug": "upgradeurl",
     "layouts": [
       {
         "viewMode": false,
