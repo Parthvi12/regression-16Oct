@@ -43,6 +43,10 @@
     {
       "id": "Public.users",
       "isDefault": false
+    },
+    {
+      "id": "upgradefromCE-BE",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -58,6 +62,9 @@
     },
     {
       "uidString": "ExcelJS_regeneratorRuntime_https://cdn.jsdelivr.net/npm/exceljs@4.3.0/dist/exceljs.min.js"
+    },
+    {
+      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
     }
   ],
   "publishedCustomJSLibs": [],
