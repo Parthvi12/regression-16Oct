@@ -22,7 +22,7 @@
     "version": 1,
     "tags": ["Toggles"],
     "isLoading": false,
-    "originalBottomRow": 21,
+    "originalBottomRow": 50,
     "alignment": "right",
     "mobileBottomRow": 18,
     "widgetName": "switches",

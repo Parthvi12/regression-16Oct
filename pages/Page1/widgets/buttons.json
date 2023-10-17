@@ -14,6 +14,44 @@
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
+        "groupButtonix8lpee4qe": {
+            "buttonType": "MENU",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+            "widgetId": "sa2w3ya235",
+            "menuItems": {
+                "menuItemheyi2ytouj": {
+                    "onClick": "{{showAlert('DSV', 'success');}}",
+                    "widgetId": "9qjyxlkwyn",
+                    "index": 2,
+                    "id": "menuItemheyi2ytouj",
+                    "label": "Menu Item 3",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItemrgnssy1c0z": {
+                    "widgetId": "sc7mtan44l",
+                    "index": 1,
+                    "id": "menuItemrgnssy1c0z",
+                    "label": "Menu Item 2",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItemue3u2625df": {
+                    "widgetId": "6j0da8aqb8",
+                    "index": 0,
+                    "id": "menuItemue3u2625df",
+                    "label": "Menu Item 1",
+                    "isDisabled": false,
+                    "isVisible": true
+                }
+            },
+            "index": 4,
+            "id": "groupButtonix8lpee4qe",
+            "label": "Group Button 2",
+            "placement": "CENTER",
+            "isDisabled": false,
+            "isVisible": true
+        },
         "groupButtonoqni1do375": {
             "buttonType": "SIMPLE",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -88,11 +126,42 @@
             "isDisabled": false
         },
         "groupButton2": {
-            "buttonType": "SIMPLE",
+            "buttonType": "MENU",
             "iconName": "add",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
             "widgetId": "",
-            "menuItems": {},
+            "menuItems": {
+                "menuItemrcq44fu7xx": {
+                    "onClick": "{{showAlert('clicked', 'success');}}",
+                    "backgroundColor": "#fca5a5",
+                    "iconName": "add",
+                    "widgetId": "alemhgd54g",
+                    "iconColor": "#b91c1c",
+                    "index": 2,
+                    "iconAlign": "right",
+                    "id": "menuItemrcq44fu7xx",
+                    "label": "\n\ntest",
+                    "isDisabled": false,
+                    "isVisible": true,
+                    "textColor": "#7f1d1d"
+                },
+                "menuItemir3kbbxhth": {
+                    "widgetId": "zleqpm5aa7",
+                    "index": 1,
+                    "id": "menuItemir3kbbxhth",
+                    "label": "Menu Item 2",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItem6d8kp87488": {
+                    "widgetId": "l8ykekkv37",
+                    "index": 0,
+                    "id": "menuItem6d8kp87488",
+                    "label": "Menu Item 1",
+                    "isDisabled": false,
+                    "isVisible": true
+                }
+            },
             "index": 0,
             "label": "Add",
             "id": "groupButton2",
@@ -105,19 +174,23 @@
     "mobileRightColumn": 57,
     "animateLoading": true,
     "parentColumnSpace": 20.03125,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton2.menuItems.menuItemrcq44fu7xx.onClick"},
+        {"key": "groupButtons.groupButtonix8lpee4qe.menuItems.menuItemheyi2ytouj.onClick"}
+    ],
     "leftColumn": 33,
     "dynamicBindingPathList": [
         {"key": "groupButtons.groupButton1.buttonColor"},
         {"key": "groupButtons.groupButton2.buttonColor"},
         {"key": "groupButtons.groupButton3.buttonColor"},
-        {"key": "groupButtons.groupButtonoqni1do375.buttonColor"}
+        {"key": "groupButtons.groupButtonoqni1do375.buttonColor"},
+        {"key": "groupButtons.groupButtonix8lpee4qe.buttonColor"}
     ],
-    "isDisabled": true,
+    "isDisabled": false,
     "key": "xhodr1y5ms",
     "orientation": "vertical",
     "isDeprecated": false,
-    "rightColumn": 38,
+    "rightColumn": 40,
     "widgetId": "5t5ix17k9s",
     "minWidth": 450,
     "isVisible": true,
