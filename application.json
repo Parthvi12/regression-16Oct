@@ -3,6 +3,14 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "test",
+      "isDefault": false
+    },
+    {
+      "id": "App_detailes",
+      "isDefault": false
     }
   ],
   "viewMode": false,
